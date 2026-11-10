@@ -1,0 +1,12 @@
+[
+  {
+    "id": "t",
+    "title": "Compact",
+    "level": 2,
+    "metadata": {
+      "kind": "design",
+      "status": "proposed"
+    },
+    "content": "Body."
+  }
+]

@@ -1,0 +1,964 @@
+[
+  {
+    "name": "basic",
+    "options": {},
+    "sections": [
+      {
+        "content": "Authentication system design.",
+        "id": "auth-design",
+        "level": 2,
+        "metadata": {
+          "kind": "design",
+          "status": "proposed"
+        },
+        "title": "Auth Design"
+      }
+    ]
+  },
+  {
+    "name": "levels",
+    "options": {},
+    "sections": [
+      {
+        "content": "Project description",
+        "id": "top",
+        "level": 1,
+        "metadata": {
+          "kind": "project"
+        },
+        "title": "Top Level"
+      },
+      {
+        "content": "Just content.",
+        "id": "plain",
+        "title": "No Metadata"
+      },
+      {
+        "id": "bare",
+        "level": 3,
+        "title": "Neither"
+      },
+      {
+        "id": "meta-only",
+        "level": 4,
+        "metadata": {
+          "kind": "note"
+        },
+        "title": "Metadata Only"
+      }
+    ]
+  },
+  {
+    "name": "yaml-compact-unquoted",
+    "options": {
+      "metadata_style": "compact",
+      "quote_strings": false
+    },
+    "sections": [
+      {
+        "content": "Body.",
+        "id": "t",
+        "metadata": {
+          "kind": "design",
+          "status": "proposed"
+        },
+        "title": "Compact"
+      }
+    ]
+  },
+  {
+    "name": "yaml-nested",
+    "options": {},
+    "sections": [
+      {
+        "id": "n",
+        "metadata": {
+          "bools": [
+            true,
+            false
+          ],
+          "empty_list": [],
+          "empty_map": {},
+          "floats": [
+            0.1,
+            -2.5,
+            100.0,
+            1.0e+20,
+            1.0e-5,
+            123456789012345.6,
+            1.0e+15,
+            -0.0,
+            0.0
+          ],
+          "ints": [
+            0,
+            -1,
+            42,
+            9223372036854775807,
+            -9223372036854775808
+          ],
+          "list_of_maps": [
+            {
+              "a": 1
+            },
+            {
+              "b": [
+                1,
+                2
+              ]
+            }
+          ],
+          "map": {
+            "inner": {
+              "deep": "value",
+              "list": [
+                "x",
+                "y"
+              ]
+            },
+            "n": null
+          },
+          "null": null,
+          "string": "text"
+        },
+        "title": "Nested YAML"
+      }
+    ]
+  },
+  {
+    "name": "yaml-nested-compact-unquoted",
+    "options": {
+      "metadata_style": "compact",
+      "quote_strings": false
+    },
+    "sections": [
+      {
+        "id": "n",
+        "metadata": {
+          "bools": [
+            true,
+            false
+          ],
+          "empty_list": [],
+          "empty_map": {},
+          "floats": [
+            0.1,
+            -2.5,
+            100.0,
+            1.0e+20,
+            1.0e-5,
+            123456789012345.6,
+            1.0e+15,
+            -0.0,
+            0.0
+          ],
+          "ints": [
+            0,
+            -1,
+            42,
+            9223372036854775807,
+            -9223372036854775808
+          ],
+          "list_of_maps": [
+            {
+              "a": 1
+            },
+            {
+              "b": [
+                1,
+                2
+              ]
+            }
+          ],
+          "map": {
+            "inner": {
+              "deep": "value",
+              "list": [
+                "x",
+                "y"
+              ]
+            },
+            "n": null
+          },
+          "null": null,
+          "string": "text"
+        },
+        "title": "Nested compact YAML"
+      }
+    ]
+  },
+  {
+    "name": "json-multiline",
+    "options": {
+      "metadata_format": "json"
+    },
+    "sections": [
+      {
+        "content": "Body.",
+        "id": "n",
+        "metadata": {
+          "bools": [
+            true,
+            false
+          ],
+          "empty_list": [],
+          "empty_map": {},
+          "floats": [
+            0.1,
+            -2.5,
+            100.0,
+            1.0e+20,
+            1.0e-5,
+            123456789012345.6,
+            1.0e+15,
+            -0.0,
+            0.0
+          ],
+          "ints": [
+            0,
+            -1,
+            42,
+            9223372036854775807,
+            -9223372036854775808
+          ],
+          "list_of_maps": [
+            {
+              "a": 1
+            },
+            {
+              "b": [
+                1,
+                2
+              ]
+            }
+          ],
+          "map": {
+            "inner": {
+              "deep": "value",
+              "list": [
+                "x",
+                "y"
+              ]
+            },
+            "n": null
+          },
+          "null": null,
+          "string": "text"
+        },
+        "title": "Nested JSON"
+      }
+    ]
+  },
+  {
+    "name": "json-compact",
+    "options": {
+      "metadata_format": "json",
+      "metadata_style": "compact"
+    },
+    "sections": [
+      {
+        "id": "n",
+        "metadata": {
+          "bools": [
+            true,
+            false
+          ],
+          "empty_list": [],
+          "empty_map": {},
+          "floats": [
+            0.1,
+            -2.5,
+            100.0,
+            1.0e+20,
+            1.0e-5,
+            123456789012345.6,
+            1.0e+15,
+            -0.0,
+            0.0
+          ],
+          "ints": [
+            0,
+            -1,
+            42,
+            9223372036854775807,
+            -9223372036854775808
+          ],
+          "list_of_maps": [
+            {
+              "a": 1
+            },
+            {
+              "b": [
+                1,
+                2
+              ]
+            }
+          ],
+          "map": {
+            "inner": {
+              "deep": "value",
+              "list": [
+                "x",
+                "y"
+              ]
+            },
+            "n": null
+          },
+          "null": null,
+          "string": "text"
+        },
+        "title": "Compact JSON"
+      }
+    ]
+  },
+  {
+    "name": "strings-quoted",
+    "options": {},
+    "sections": [
+      {
+        "id": "s",
+        "metadata": {
+          "s001": "yes",
+          "s002": "No",
+          "s003": "ON",
+          "s004": "off",
+          "s005": "y",
+          "s006": "n",
+          "s007": "~",
+          "s008": "null",
+          "s009": "NULL",
+          "s010": "true",
+          "s011": "False",
+          "s012": "12",
+          "s013": "1.5",
+          "s014": "-3",
+          "s015": "+1",
+          "s016": ".5",
+          "s017": ".inf",
+          "s018": "-.inf",
+          "s019": "0x1F",
+          "s020": "0o17",
+          "s021": "017",
+          "s022": "08",
+          "s023": "1_000",
+          "s024": "1:20",
+          "s025": "2026-11-09",
+          "s026": "2026-11-09T10:00:00Z",
+          "s027": "a: b",
+          "s028": "a:b",
+          "s029": "# x",
+          "s030": "a #b",
+          "s031": "C#",
+          "s032": "x, y",
+          "s033": "[x]",
+          "s034": "{x}",
+          "s035": "x]",
+          "s036": "-x",
+          "s037": "- x",
+          "s038": "?x",
+          "s039": "? x",
+          "s040": "!tag",
+          "s041": "&a",
+          "s042": "*a",
+          "s043": "|",
+          "s044": "> x",
+          "s045": "%x",
+          "s046": "@x",
+          "s047": "`x`",
+          "s048": "'q'",
+          "s049": "\"q\"",
+          "s050": "=",
+          "s051": "<<",
+          "s052": "plain text",
+          "s053": "trailing:",
+          "s054": " lead",
+          "s055": "trail ",
+          "s056": "tab\there",
+          "s057": "new\nline",
+          "s058": "it's",
+          "s059": "say \"hi\"",
+          "s060": "back\\slash",
+          "s061": "unicode é ✓",
+          "s062": "emoji 🙂",
+          "s063": "nbsp inside",
+          "s064": " lead nbsp",
+          "s065": "-",
+          "s066": "--",
+          "s067": "---",
+          "s068": "...",
+          "s069": "%",
+          "s070": "k:",
+          "s071": "Yes please",
+          "s072": "no way",
+          "s073": "on time",
+          "s074": "1st",
+          "s075": "2nd place",
+          "s076": "v1.2.3",
+          "s077": "1.2.3",
+          "s078": "1e5",
+          "s079": "-inf",
+          "s080": "+nan",
+          "s081": "NaN",
+          "s082": "Infinity",
+          "s083": "0",
+          "s084": "00",
+          "s085": "-0",
+          "s086": ".",
+          "s087": "..",
+          "s088": "a|b",
+          "s089": "a>b",
+          "s090": "a&b",
+          "s091": "a*b",
+          "s092": "a!b",
+          "s093": "a%b",
+          "s094": "a@b",
+          "s095": "a`b",
+          "s096": "a'b",
+          "s097": "a\"b",
+          "s098": "a=b",
+          "s099": "a<b",
+          "s100": "x # y",
+          "s101": "x#y",
+          "s102": "#",
+          "s103": "##",
+          "s104": "{}",
+          "s105": "[]",
+          "s106": "a,b",
+          "s107": "a]b",
+          "s108": "a}b",
+          "s109": "a{b",
+          "s110": "a[b",
+          "s111": "Ⅻ",
+          "s112": "١٢",
+          "s113": "",
+          "s114": "control\u0001char",
+          "s115": "delchar",
+          "s116": "line sep",
+          "s117": "bom﻿",
+          "s118": "x:",
+          "s119": "x: ",
+          "s120": "a: b: c",
+          "s121": "key: [1]"
+        },
+        "title": "Strings, quoted"
+      }
+    ]
+  },
+  {
+    "name": "strings-unquoted",
+    "options": {
+      "quote_strings": false
+    },
+    "sections": [
+      {
+        "id": "s",
+        "metadata": {
+          "s001": "yes",
+          "s002": "No",
+          "s003": "ON",
+          "s004": "off",
+          "s005": "y",
+          "s006": "n",
+          "s007": "~",
+          "s008": "null",
+          "s009": "NULL",
+          "s010": "true",
+          "s011": "False",
+          "s012": "12",
+          "s013": "1.5",
+          "s014": "-3",
+          "s015": "+1",
+          "s016": ".5",
+          "s017": ".inf",
+          "s018": "-.inf",
+          "s019": "0x1F",
+          "s020": "0o17",
+          "s021": "017",
+          "s022": "08",
+          "s023": "1_000",
+          "s024": "1:20",
+          "s025": "2026-11-09",
+          "s026": "2026-11-09T10:00:00Z",
+          "s027": "a: b",
+          "s028": "a:b",
+          "s029": "# x",
+          "s030": "a #b",
+          "s031": "C#",
+          "s032": "x, y",
+          "s033": "[x]",
+          "s034": "{x}",
+          "s035": "x]",
+          "s036": "-x",
+          "s037": "- x",
+          "s038": "?x",
+          "s039": "? x",
+          "s040": "!tag",
+          "s041": "&a",
+          "s042": "*a",
+          "s043": "|",
+          "s044": "> x",
+          "s045": "%x",
+          "s046": "@x",
+          "s047": "`x`",
+          "s048": "'q'",
+          "s049": "\"q\"",
+          "s050": "=",
+          "s051": "<<",
+          "s052": "plain text",
+          "s053": "trailing:",
+          "s054": " lead",
+          "s055": "trail ",
+          "s056": "tab\there",
+          "s057": "new\nline",
+          "s058": "it's",
+          "s059": "say \"hi\"",
+          "s060": "back\\slash",
+          "s061": "unicode é ✓",
+          "s062": "emoji 🙂",
+          "s063": "nbsp inside",
+          "s064": " lead nbsp",
+          "s065": "-",
+          "s066": "--",
+          "s067": "---",
+          "s068": "...",
+          "s069": "%",
+          "s070": "k:",
+          "s071": "Yes please",
+          "s072": "no way",
+          "s073": "on time",
+          "s074": "1st",
+          "s075": "2nd place",
+          "s076": "v1.2.3",
+          "s077": "1.2.3",
+          "s078": "1e5",
+          "s079": "-inf",
+          "s080": "+nan",
+          "s081": "NaN",
+          "s082": "Infinity",
+          "s083": "0",
+          "s084": "00",
+          "s085": "-0",
+          "s086": ".",
+          "s087": "..",
+          "s088": "a|b",
+          "s089": "a>b",
+          "s090": "a&b",
+          "s091": "a*b",
+          "s092": "a!b",
+          "s093": "a%b",
+          "s094": "a@b",
+          "s095": "a`b",
+          "s096": "a'b",
+          "s097": "a\"b",
+          "s098": "a=b",
+          "s099": "a<b",
+          "s100": "x # y",
+          "s101": "x#y",
+          "s102": "#",
+          "s103": "##",
+          "s104": "{}",
+          "s105": "[]",
+          "s106": "a,b",
+          "s107": "a]b",
+          "s108": "a}b",
+          "s109": "a{b",
+          "s110": "a[b",
+          "s111": "Ⅻ",
+          "s112": "١٢",
+          "s113": "",
+          "s114": "control\u0001char",
+          "s115": "delchar",
+          "s116": "line sep",
+          "s117": "bom﻿",
+          "s118": "x:",
+          "s119": "x: ",
+          "s120": "a: b: c",
+          "s121": "key: [1]"
+        },
+        "title": "Strings, unquoted"
+      }
+    ]
+  },
+  {
+    "name": "strings-compact-unquoted",
+    "options": {
+      "metadata_style": "compact",
+      "quote_strings": false
+    },
+    "sections": [
+      {
+        "id": "s",
+        "metadata": {
+          "s001": "yes",
+          "s002": "No",
+          "s003": "ON",
+          "s004": "off",
+          "s005": "y",
+          "s006": "n",
+          "s007": "~",
+          "s008": "null",
+          "s009": "NULL",
+          "s010": "true",
+          "s011": "False",
+          "s012": "12",
+          "s013": "1.5",
+          "s014": "-3",
+          "s015": "+1",
+          "s016": ".5",
+          "s017": ".inf",
+          "s018": "-.inf",
+          "s019": "0x1F",
+          "s020": "0o17",
+          "s021": "017",
+          "s022": "08",
+          "s023": "1_000",
+          "s024": "1:20",
+          "s025": "2026-11-09",
+          "s026": "2026-11-09T10:00:00Z",
+          "s027": "a: b",
+          "s028": "a:b",
+          "s029": "# x",
+          "s030": "a #b",
+          "s031": "C#",
+          "s032": "x, y",
+          "s033": "[x]",
+          "s034": "{x}",
+          "s035": "x]",
+          "s036": "-x",
+          "s037": "- x",
+          "s038": "?x",
+          "s039": "? x",
+          "s040": "!tag",
+          "s041": "&a",
+          "s042": "*a",
+          "s043": "|",
+          "s044": "> x",
+          "s045": "%x",
+          "s046": "@x",
+          "s047": "`x`",
+          "s048": "'q'",
+          "s049": "\"q\"",
+          "s050": "=",
+          "s051": "<<",
+          "s052": "plain text",
+          "s053": "trailing:",
+          "s054": " lead",
+          "s055": "trail ",
+          "s056": "tab\there",
+          "s057": "new\nline",
+          "s058": "it's",
+          "s059": "say \"hi\"",
+          "s060": "back\\slash",
+          "s061": "unicode é ✓",
+          "s062": "emoji 🙂",
+          "s063": "nbsp inside",
+          "s064": " lead nbsp",
+          "s065": "-",
+          "s066": "--",
+          "s067": "---",
+          "s068": "...",
+          "s069": "%",
+          "s070": "k:",
+          "s071": "Yes please",
+          "s072": "no way",
+          "s073": "on time",
+          "s074": "1st",
+          "s075": "2nd place",
+          "s076": "v1.2.3",
+          "s077": "1.2.3",
+          "s078": "1e5",
+          "s079": "-inf",
+          "s080": "+nan",
+          "s081": "NaN",
+          "s082": "Infinity",
+          "s083": "0",
+          "s084": "00",
+          "s085": "-0",
+          "s086": ".",
+          "s087": "..",
+          "s088": "a|b",
+          "s089": "a>b",
+          "s090": "a&b",
+          "s091": "a*b",
+          "s092": "a!b",
+          "s093": "a%b",
+          "s094": "a@b",
+          "s095": "a`b",
+          "s096": "a'b",
+          "s097": "a\"b",
+          "s098": "a=b",
+          "s099": "a<b",
+          "s100": "x # y",
+          "s101": "x#y",
+          "s102": "#",
+          "s103": "##",
+          "s104": "{}",
+          "s105": "[]",
+          "s106": "a,b",
+          "s107": "a]b",
+          "s108": "a}b",
+          "s109": "a{b",
+          "s110": "a[b",
+          "s111": "Ⅻ",
+          "s112": "١٢",
+          "s113": "",
+          "s114": "control\u0001char",
+          "s115": "delchar",
+          "s116": "line sep",
+          "s117": "bom﻿",
+          "s118": "x:",
+          "s119": "x: ",
+          "s120": "a: b: c",
+          "s121": "key: [1]"
+        },
+        "title": "Strings, compact"
+      }
+    ]
+  },
+  {
+    "name": "strings-json",
+    "options": {
+      "metadata_format": "json"
+    },
+    "sections": [
+      {
+        "id": "s",
+        "metadata": {
+          "s001": "yes",
+          "s002": "No",
+          "s003": "ON",
+          "s004": "off",
+          "s005": "y",
+          "s006": "n",
+          "s007": "~",
+          "s008": "null",
+          "s009": "NULL",
+          "s010": "true",
+          "s011": "False",
+          "s012": "12",
+          "s013": "1.5",
+          "s014": "-3",
+          "s015": "+1",
+          "s016": ".5",
+          "s017": ".inf",
+          "s018": "-.inf",
+          "s019": "0x1F",
+          "s020": "0o17",
+          "s021": "017",
+          "s022": "08",
+          "s023": "1_000",
+          "s024": "1:20",
+          "s025": "2026-11-09",
+          "s026": "2026-11-09T10:00:00Z",
+          "s027": "a: b",
+          "s028": "a:b",
+          "s029": "# x",
+          "s030": "a #b",
+          "s031": "C#",
+          "s032": "x, y",
+          "s033": "[x]",
+          "s034": "{x}",
+          "s035": "x]",
+          "s036": "-x",
+          "s037": "- x",
+          "s038": "?x",
+          "s039": "? x",
+          "s040": "!tag",
+          "s041": "&a",
+          "s042": "*a",
+          "s043": "|",
+          "s044": "> x",
+          "s045": "%x",
+          "s046": "@x",
+          "s047": "`x`",
+          "s048": "'q'",
+          "s049": "\"q\"",
+          "s050": "=",
+          "s051": "<<",
+          "s052": "plain text",
+          "s053": "trailing:",
+          "s054": " lead",
+          "s055": "trail ",
+          "s056": "tab\there",
+          "s057": "new\nline",
+          "s058": "it's",
+          "s059": "say \"hi\"",
+          "s060": "back\\slash",
+          "s061": "unicode é ✓",
+          "s062": "emoji 🙂",
+          "s063": "nbsp inside",
+          "s064": " lead nbsp",
+          "s065": "-",
+          "s066": "--",
+          "s067": "---",
+          "s068": "...",
+          "s069": "%",
+          "s070": "k:",
+          "s071": "Yes please",
+          "s072": "no way",
+          "s073": "on time",
+          "s074": "1st",
+          "s075": "2nd place",
+          "s076": "v1.2.3",
+          "s077": "1.2.3",
+          "s078": "1e5",
+          "s079": "-inf",
+          "s080": "+nan",
+          "s081": "NaN",
+          "s082": "Infinity",
+          "s083": "0",
+          "s084": "00",
+          "s085": "-0",
+          "s086": ".",
+          "s087": "..",
+          "s088": "a|b",
+          "s089": "a>b",
+          "s090": "a&b",
+          "s091": "a*b",
+          "s092": "a!b",
+          "s093": "a%b",
+          "s094": "a@b",
+          "s095": "a`b",
+          "s096": "a'b",
+          "s097": "a\"b",
+          "s098": "a=b",
+          "s099": "a<b",
+          "s100": "x # y",
+          "s101": "x#y",
+          "s102": "#",
+          "s103": "##",
+          "s104": "{}",
+          "s105": "[]",
+          "s106": "a,b",
+          "s107": "a]b",
+          "s108": "a}b",
+          "s109": "a{b",
+          "s110": "a[b",
+          "s111": "Ⅻ",
+          "s112": "١٢",
+          "s113": "",
+          "s114": "control\u0001char",
+          "s115": "delchar",
+          "s116": "line sep",
+          "s117": "bom﻿",
+          "s118": "x:",
+          "s119": "x: ",
+          "s120": "a: b: c",
+          "s121": "key: [1]"
+        },
+        "title": "Strings, JSON"
+      }
+    ]
+  },
+  {
+    "name": "keys-unquoted",
+    "options": {
+      "quote_strings": false
+    },
+    "sections": [
+      {
+        "id": "k",
+        "metadata": {
+          "#k": 4,
+          "-k": 6,
+          "1": 3,
+          "Null": 9,
+          "a b": 0,
+          "a:b": 1,
+          "k,1": 5,
+          "k: v": 7,
+          "plain": 8,
+          "x y z": 10,
+          "yes": 2,
+          "é": 11
+        },
+        "title": "Keys"
+      }
+    ]
+  },
+  {
+    "name": "keys-compact",
+    "options": {
+      "metadata_style": "compact"
+    },
+    "sections": [
+      {
+        "id": "k",
+        "metadata": {
+          "#k": 4,
+          "-k": 6,
+          "1": 3,
+          "Null": 9,
+          "a b": 0,
+          "a:b": 1,
+          "k,1": 5,
+          "k: v": 7,
+          "plain": 8,
+          "x y z": 10,
+          "yes": 2,
+          "é": 11
+        },
+        "title": "Keys, compact"
+      }
+    ]
+  },
+  {
+    "name": "content",
+    "options": {},
+    "sections": [
+      {
+        "content": "Intro, with a colon: right here.\n\n```sh\n# a comment that looks like a heading\n## [not-a-section] Inside code\n```\n\n### A heading without an id\n\n---\n\nText between rules.\n\n---\n\n~~~~\n## [also-not] In a tilde fence\n~~~~\n\nThe end.",
+        "id": "c",
+        "metadata": {
+          "kind": "note"
+        },
+        "title": "Content"
+      },
+      {
+        "content": "Last.",
+        "id": "after",
+        "title": "After"
+      }
+    ]
+  },
+  {
+    "name": "empty-metadata",
+    "options": {},
+    "sections": [
+      {
+        "content": "x",
+        "id": "e",
+        "metadata": {},
+        "title": "Empty"
+      }
+    ]
+  },
+  {
+    "name": "empty-metadata-compact",
+    "options": {
+      "metadata_style": "compact"
+    },
+    "sections": [
+      {
+        "content": "x",
+        "id": "e",
+        "metadata": {},
+        "title": "Empty"
+      }
+    ]
+  },
+  {
+    "name": "empty-metadata-json",
+    "options": {
+      "metadata_format": "json"
+    },
+    "sections": [
+      {
+        "content": "x",
+        "id": "e",
+        "metadata": {},
+        "title": "Empty"
+      }
+    ]
+  }
+]

@@ -1,0 +1,147 @@
+[
+  {
+    "id": "scalars",
+    "title": "Plain Scalars",
+    "level": 2,
+    "metadata": {
+      "yes1": true,
+      "no1": false,
+      "y": "y",
+      "nul1": null,
+      "nul2": null,
+      "nul3": null,
+      "int1": 42,
+      "int2": -17,
+      "octal": 15,
+      "octal2": 15,
+      "binary": 5,
+      "hex": 31,
+      "under": 1000,
+      "big": 1.0e+20,
+      "float1": 1.5,
+      "float2": 0.5,
+      "float3": 100000.0,
+      "float4": 1.0,
+      "negzero": -0.0,
+      "date": "2026-11-09 00:00:00 UTC",
+      "stamp1": "2026-11-09 10:20:30 UTC",
+      "stamp2": "2026-11-09 10:20:30 UTC",
+      "stamp3": "2026-11-09 10:20:30 +05:30",
+      "stamp4": "2026-01-09 00:00:00 UTC",
+      "badday": "2026-02-30",
+      "sexagesimal": "1:20",
+      "version": "1.2.3",
+      "text": "plain words here"
+    }
+  },
+  {
+    "id": "quoted",
+    "title": "Quoted Scalars",
+    "level": 2,
+    "metadata": {
+      "d1": "017",
+      "d2": "yes",
+      "s1": "it's",
+      "esc": "tab\tnew\nline é A",
+      "folded": "folded lines\n",
+      "literal": "literal\nlines\n",
+      "multi": "this plain scalar continues"
+    }
+  },
+  {
+    "id": "structures",
+    "title": "Structures",
+    "level": 2,
+    "metadata": {
+      "list": [
+        "one",
+        2,
+        [
+          3,
+          "four"
+        ]
+      ],
+      "map": {
+        "inner": {
+          "deep": true
+        }
+      },
+      "flow": {
+        "a": 1,
+        "b": [
+          "x",
+          "y"
+        ]
+      },
+      "empty_list": [],
+      "empty_map": {}
+    }
+  },
+  {
+    "id": "anchors",
+    "title": "Anchors and Merges",
+    "level": 2,
+    "metadata": {
+      "base": {
+        "colour": "red",
+        "size": 1
+      },
+      "copy": {
+        "colour": "red",
+        "size": 1
+      },
+      "merged": {
+        "colour": "red",
+        "size": 2
+      },
+      "early": {
+        "size": 1,
+        "colour": "red"
+      }
+    }
+  },
+  {
+    "id": "duplicates",
+    "title": "Duplicate Keys",
+    "level": 2,
+    "metadata": {
+      "k": "second"
+    }
+  },
+  {
+    "id": "tags",
+    "title": "Explicit Tags",
+    "level": 2,
+    "content": "---\nstr: !!str 017\nint: !!int \"12\"\nfloat: !!float \"3\"\nbool: !!bool \"yes\"\nnull: !!null \"\"\n---"
+  },
+  {
+    "id": "badkey",
+    "title": "A Key That Isn't a String",
+    "level": 2,
+    "content": "---\n1: one\n---\n\nThe block above isn't metadata, so it's content."
+  },
+  {
+    "id": "boolkey",
+    "title": "A Boolean Key",
+    "level": 2,
+    "content": "---\nyes: indeed\n---"
+  },
+  {
+    "id": "badyaml",
+    "title": "YAML That Doesn't Parse",
+    "level": 2,
+    "content": "---\nkey: [unclosed\n---"
+  },
+  {
+    "id": "comment",
+    "title": "Only a Comment",
+    "level": 2,
+    "content": "---\n# nothing here\n---"
+  },
+  {
+    "id": "empty",
+    "title": "Empty Block",
+    "level": 2,
+    "content": "Content after an empty block."
+  }
+]

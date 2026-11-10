@@ -1,0 +1,56 @@
+[
+  {
+    "id": "n",
+    "title": "Compact JSON",
+    "level": 2,
+    "metadata": {
+      "bools": [
+        true,
+        false
+      ],
+      "empty_list": [],
+      "empty_map": {},
+      "floats": [
+        0.1,
+        -2.5,
+        100.0,
+        1.0e+20,
+        1.0e-5,
+        123456789012345.6,
+        1.0e+15,
+        -0.0,
+        0.0
+      ],
+      "ints": [
+        0,
+        -1,
+        42,
+        9223372036854775807,
+        -9223372036854775808
+      ],
+      "list_of_maps": [
+        {
+          "a": 1
+        },
+        {
+          "b": [
+            1,
+            2
+          ]
+        }
+      ],
+      "map": {
+        "inner": {
+          "deep": "value",
+          "list": [
+            "x",
+            "y"
+          ]
+        },
+        "n": null
+      },
+      "null": null,
+      "string": "text"
+    }
+  }
+]

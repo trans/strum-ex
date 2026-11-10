@@ -1,0 +1,30 @@
+[
+  {
+    "id": "top",
+    "title": "Top Level",
+    "level": 1,
+    "metadata": {
+      "kind": "project"
+    },
+    "content": "Project description"
+  },
+  {
+    "id": "plain",
+    "title": "No Metadata",
+    "level": 2,
+    "content": "Just content."
+  },
+  {
+    "id": "bare",
+    "title": "Neither",
+    "level": 3
+  },
+  {
+    "id": "meta-only",
+    "title": "Metadata Only",
+    "level": 4,
+    "metadata": {
+      "kind": "note"
+    }
+  }
+]

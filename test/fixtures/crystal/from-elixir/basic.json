@@ -1,0 +1,12 @@
+[
+  {
+    "id": "auth-design",
+    "title": "Auth Design",
+    "level": 2,
+    "metadata": {
+      "kind": "design",
+      "status": "proposed"
+    },
+    "content": "Authentication system design."
+  }
+]

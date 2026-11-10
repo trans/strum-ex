@@ -1,0 +1,70 @@
+[
+  {
+    "id": "fences",
+    "title": "Fences",
+    "level": 2,
+    "content": "```sh\n# a comment\n## [inside] Not a section\n```\n\n````\n```\n## [nested] Still code\n```\n````\n\n~~~ruby\n## [tilde] Code too\n~~~\n\n   ```\n## [indented] Fence indented three spaces\n   ```\n\nAfter the fences."
+  },
+  {
+    "id": "headings",
+    "title": "Other Headings",
+    "level": 2,
+    "content": "### Not an id heading\n\nText under it."
+  },
+  {
+    "id": "deeper",
+    "title": "But this one is",
+    "level": 4
+  },
+  {
+    "id": "rules",
+    "title": "Rules",
+    "level": 2,
+    "content": "---\nNot metadata.\n---\nStill content."
+  },
+  {
+    "id": "colon",
+    "title": "Colon Line",
+    "level": 2,
+    "content": "Note: this is content."
+  },
+  {
+    "id": "brace",
+    "title": "Brace Line",
+    "level": 2,
+    "content": "{not: metadata\n\nThe line above isn't metadata."
+  },
+  {
+    "id": "nbsp",
+    "title": "Heading after a no-break space",
+    "level": 1,
+    "content": "Text."
+  },
+  {
+    "id": "trailing",
+    "title": "Title with closing hashes ##",
+    "level": 2,
+    "content": "Text."
+  },
+  {
+    "id": "crlf",
+    "title": "Windows line endings",
+    "level": 2,
+    "metadata": {
+      "kind": "crlf"
+    },
+    "content": "Line one.\nLine two."
+  },
+  {
+    "id": "tabs",
+    "title": "Tabbed title",
+    "level": 2,
+    "content": "Indented text."
+  },
+  {
+    "id": "open-fence",
+    "title": "Unclosed fence",
+    "level": 2,
+    "content": "```\n## [swallowed] Inside an unclosed fence"
+  }
+]

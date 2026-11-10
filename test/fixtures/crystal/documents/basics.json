@@ -1,0 +1,51 @@
+[
+  {
+    "id": "project",
+    "title": "The Project",
+    "level": 1,
+    "metadata": {
+      "kind": "project",
+      "owner": "trans"
+    },
+    "content": "What it is."
+  },
+  {
+    "id": "design",
+    "title": "Design",
+    "level": 2,
+    "metadata": {
+      "kind": "design",
+      "status": "proposed",
+      "tags": [
+        "auth",
+        "api"
+      ]
+    },
+    "content": "The design."
+  },
+  {
+    "id": "json-block",
+    "title": "JSON Between Rules",
+    "level": 3,
+    "metadata": {
+      "kind": "decision",
+      "weight": 0.75
+    },
+    "content": "Decided."
+  },
+  {
+    "id": "compact-yaml",
+    "title": "Compact YAML",
+    "level": 2,
+    "metadata": {
+      "kind": "note",
+      "n": 3
+    },
+    "content": "Short."
+  },
+  {
+    "id": "bare",
+    "title": "No Metadata, No Content",
+    "level": 2
+  }
+]

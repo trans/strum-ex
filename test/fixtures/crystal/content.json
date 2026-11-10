@@ -1,0 +1,17 @@
+[
+  {
+    "id": "c",
+    "title": "Content",
+    "level": 2,
+    "metadata": {
+      "kind": "note"
+    },
+    "content": "Intro, with a colon: right here.\n\n```sh\n# a comment that looks like a heading\n## [not-a-section] Inside code\n```\n\n### A heading without an id\n\n---\n\nText between rules.\n\n---\n\n~~~~\n## [also-not] In a tilde fence\n~~~~\n\nThe end."
+  },
+  {
+    "id": "after",
+    "title": "After",
+    "level": 2,
+    "content": "Last."
+  }
+]

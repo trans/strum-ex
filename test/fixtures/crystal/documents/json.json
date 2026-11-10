@@ -1,0 +1,59 @@
+[
+  {
+    "id": "numbers",
+    "title": "Numbers",
+    "level": 2,
+    "metadata": {
+      "int": 1,
+      "neg": -2,
+      "float": 2.5,
+      "exp": 1000.0,
+      "big": 1.2345678901234567e+19,
+      "zero": -0.0,
+      "fzero": -0.0
+    }
+  },
+  {
+    "id": "nested",
+    "title": "Nested",
+    "level": 2,
+    "metadata": {
+      "a": {
+        "b": {
+          "c": [
+            1,
+            2,
+            {
+              "d": null
+            }
+          ]
+        }
+      },
+      "t": true,
+      "s": "line\nbreak é"
+    }
+  },
+  {
+    "id": "dupes",
+    "title": "Duplicate Keys",
+    "level": 2,
+    "metadata": {
+      "k": 2
+    }
+  },
+  {
+    "id": "fallback",
+    "title": "Not JSON, Read as YAML",
+    "level": 2,
+    "metadata": {
+      "kind": "yaml",
+      "quoted": true
+    }
+  },
+  {
+    "id": "array",
+    "title": "An Array Isn't Metadata",
+    "level": 2,
+    "content": "---\n[1, 2, 3]\n---\n\nContent."
+  }
+]
